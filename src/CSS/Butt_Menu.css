@@ -1,0 +1,46 @@
+.button-base.red {
+	background-color: #c62828;
+	color: #ffffff;
+}
+
+.button-base.green {
+	background-color: #2e7d32;
+	color: #ffffff;
+}
+
+.button-base.Standard {
+	background-color: #1d1d1d;
+	color: #ffffff;
+}
+
+.button-base.small {
+	height: 40px;
+	font-size: 0.9rem;
+	min-width: 100px;
+}
+
+.button-base.medium {
+	height: 56px;
+	font-size: 1rem;
+	min-width: 140px;
+}
+
+.button-base.large {
+	height: 64px;
+	font-size: 1.1rem;
+	min-width: 180px;
+}
+
+.button-base.full{
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+.button-wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.button-wrapper > .button-base {
+	flex: 1 1 auto;
+}

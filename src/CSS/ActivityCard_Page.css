@@ -1,0 +1,105 @@
+.activity-page-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.activity-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.activity-page-container h1 {
+	margin-top: 10px;
+	margin-bottom: 12px;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+
+.activity-card {
+	position: relative;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+
+.activity-card-button {
+	all: unset; 
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	justify-content: flex-start;
+	align-items: stretch;
+	width: 100%;
+	min-height: 20vh;
+	padding: 16px 16xp 16px 16px;
+	text-align: left;
+	overflow: hidden;
+	border-radius: 18px;
+	border: 2px solid rgba(0, 0, 0, 0.35);
+	box-shadow:
+		inset 0 2px 4px rgba(255, 255, 255, 0.35),
+		inset 0 -3px 5px rgba(0, 0, 0, 0.35),
+		0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.row-container {
+	margin: 12px;
+}
+
+.activity-card-button p {
+	margin: 0 0 4px 4px;
+	text-align: left;
+}
+
+.activity-row {
+	margin: 0;
+	display: flex;
+	align-items: flex-start;
+}
+
+.activity-row .label {
+	font-weight: 800;
+	white-space: nowrap;
+}
+
+.activity-row .value {
+	font-weight: 400;
+	flex: 1;           
+	white-space: pre-wrap;  
+	word-break: break-word;
+}
+
+.activity-row .description {
+	max-height: 7rem;
+	overflow-y: auto;
+	padding-right: 4px;
+}
+
+.activity-page-home {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 12px;
+	align-items: center;
+	width: 100%;
+}
+
+.activity-page-home > * {
+	width: 100%;
+}
+
+.delete-btn {
+	position: absolute;
+	border-radius:16px;
+	right: 22px;
+	box-shadow:
+		inset 0 2px 4px rgba(255, 255, 255, 0.35),
+		inset 0 -3px 5px rgba(0, 0, 0, 0.35),
+		0 6px 12px rgba(0, 0, 0, 0.25);
+	font-size: 0.60rem;
+	z-index: 10;
+}

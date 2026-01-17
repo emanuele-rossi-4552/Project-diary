@@ -1,0 +1,84 @@
+.single-activity-page {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.activity-header {
+	flex-shrink: 0;
+	padding: 20px;
+	background: inherit;
+}
+
+.activity-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.activity-actions > * {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+.activity-name {
+	text-align: left;
+	font-size: 1.2rem;
+	margin-bottom: 8px;
+}
+
+.activity-name span {
+	color:rgba(217, 246, 105, 0.956);	
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: block;
+}
+
+.activity-description {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.activity-description span {
+	color:rgba(217, 246, 105, 0.956);		
+	font-size: 1.3rem;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.activity-description p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.comments-title {
+	color:rgba(67, 238, 76, 0.956);		
+	text-align: left;
+	margin: 0;
+}
+
+.comments-content {
+	flex: 1;
+	overflow-y: auto;
+	padding: 0 20px 20px 20px;
+}
+.confirm-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+}
+
+.confirm-actions {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+}
+

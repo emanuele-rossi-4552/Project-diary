@@ -1,0 +1,48 @@
+.status-bar {
+	position: relative;
+	width: 100%;
+	background-color: #242424;
+	padding: 8px 0;
+	box-sizing: border-box;
+}
+
+.status-bar__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	padding: 0 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.status-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 8px 12px;
+	flex: 1 1 45%;
+	min-width: 120px;
+	border: 2px solid black;
+	background-color: #1c1c1c;
+	border-radius: 8px;
+	font-family: Arial, sans-serif;
+	font-size: clamp(0.8rem, 3vw, 1rem);
+	box-sizing: border-box;
+}
+.status-item_label {
+	color: rgb(224, 219, 219);
+	font-weight: bold;
+}
+.status-item_value {
+	font-weight: bold;
+}
+
+/*
+.status-item.is-progress { background-color: #ffff0091; }
+.status-item.is-death { background-color: #fa000091; }
+.status-item.is-done { background-color: #37bd3e91; }
+.status-item.is-ready { background-color: #2954edbc; }
+*/
+

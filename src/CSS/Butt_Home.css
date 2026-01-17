@@ -1,0 +1,33 @@
+.home-status-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 12px;
+	width: 100%;
+	padding-top: 0;
+	min-height: calc(100vh - 180px);
+}
+
+.home-card {
+	display: flex;
+	width: 100%;
+	flex: 1 1 auto;
+}
+
+.home-button {
+	width: 100%;
+	height: auto;
+	font-size: clamp(1rem, 4vw, 1.8rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 0;
+	border-radius: 12px;
+	box-sizing: border-box;
+}
+
+.variant-progres { background-color: #171717; color: #ffffff; } /*#ffff00e0*/
+.variant-ready { background-color: #171717; color: #ffffff; } /*#2e7dec*/
+.variant-done { background-color: #171717; color: #ffffff; } /*#37bd3e*/
+.variant-death { background-color: #171717; color: #ffffff; } /*#fa0000*/
+.variant-new { background-color: #2d8732c1; color: #ffffff; }

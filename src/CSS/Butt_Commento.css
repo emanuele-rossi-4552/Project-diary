@@ -1,0 +1,58 @@
+.comment-card {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 12px;
+}
+
+.comment-card > button {
+	width: 100%;
+	display: block;
+	background-color: #1e1e1e;
+	border: 2px solid #000;
+	border-radius: 8px;
+	padding: 12px 16px;
+	cursor: pointer;
+	text-align: left;
+}
+
+.comment-card > button {
+	color: inherit;
+	font: inherit;
+}
+
+.comment-card > button > div:first-child {
+	display: flex;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+.comment-card p {
+	margin: 0;
+}
+
+.comment-card > button > div:last-child p {
+	line-height: 1.4;
+	white-space: normal;
+	word-break: break-word;
+}
+
+.comment-card > button.delete-btn {
+	width: auto;
+	display: inline-flex;
+	padding: 4px 8px;
+	font-size: 0.75rem;
+}
+
+.comment-card {
+	position: relative;
+}
+
+.delete-btn {
+	background-color: #d41212a3;
+	border: 2px solid #010101;
+	position: absolute;
+	bottom: 10px;
+	right: 12px;
+	z-index: 3;
+}
+
