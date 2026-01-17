@@ -1,77 +1,83 @@
-# Registro Idee – Diario Attività e Progetti
+# Project Diary – Activity and Project Tracker
 
-Web app React per tracciare progetti e idee nel tempo, con persistenza locale e build Android tramite Capacitor.
+React web app to track projects and ideas over time, with local data persistence and Android build via Capacitor.
 
-**Registro Idee** è un’applicazione sviluppata per gestire e mantenere nel tempo uno storico personale di attività, progetti e idee.  
-Il progetto nasce da un’esigenza reale e viene condiviso su GitHub **a scopo dimostrativo** come esempio di applicazione completa, autonoma e portata a termine.
+**Project Diary** is an application developed to manage and maintain a personal history of activities, projects, and ideas over time.  
+The project was born from a real personal need and is shared on GitHub **for demonstration purposes** as an example of a complete, standalone, and finished application.
 
-## Problema affrontato
+## Problem Addressed
 
-Durante lo sviluppo di progetti personali è facile perdere traccia di:
-- idee iniziali
-- motivazioni
-- stati di avanzamento
-- progetti abbandonati e relative ragioni
+When developing personal projects, it’s easy to lose track of:
+- initial ideas
+- motivations
+- progress status
+- abandoned projects and their reasons
 
-Questo porta a ripetere errori o a dimenticare contesto utile nel tempo.
+This can lead to repeating mistakes or forgetting useful context over time.
 
-L’app risolve questo problema fornendo un **diario strutturato**, persistente e consultabile offline.
+The app solves this problem by providing a **structured diary**, persistent and accessible offline.
 
-## Funzionalità principali
+## Main Features
 
-- Creazione e gestione di attività / progetti  
-- Suddivisione per stato:
-  - da fare
-  - in corso
-  - completati
-  - abbandonati
-- Commenti associati a ogni progetto per annotare pensieri e riflessioni
-- Persistenza locale dei dati
-- Utilizzo offline
+- Create and manage activities / projects  
+- Categorization by status:
+  - To Do
+  - In Progress
+  - Completed
+  - Abandoned
+- Comments associated with each project to note thoughts and reflections
+- Local data persistence
+- Offline usage
 
-## Stack tecnologico
+## Technology Stack
 
 - **React** (v19)
-- **Vite** come build tool
-- **React Router DOM** per la navigazione
-- **IndexedDB** per la persistenza dei dati
-- **idb** come layer di astrazione sul database
-- **Capacitor** per la distribuzione Android
+- **Vite** as build tool
+- **React Router DOM** for navigation
+- **IndexedDB** for data persistence
+- **idb** as an abstraction layer over the database
+- **Capacitor** for Android deployment
 
-Non è presente alcun backend: l’architettura è volutamente semplice e locale.
+No backend is present: the architecture is intentionally simple and local.
 
-## Scelte architetturali
+## Architectural Decisions
 
 ### IndexedDB
-Scelta per garantire:
-- persistenza dei dati
-- funzionamento offline
-- assenza di costi e complessità di un backend non necessario
+Chosen to provide:
+- data persistence
+- offline functionality
+- no costs or complexity of a backend that is not needed
 
-### Separazione delle responsabilità
-- componenti UI separati per bottoni e pagine
-- gestione centralizzata dei dati tramite context
-- logica database isolata in file dedicati
+### Separation of Responsibilities
+- UI components separated for buttons and pages
+- centralized data management through context
+- database logic isolated in dedicated files
 
 ### Web → Mobile
-L’app nasce come web app React e viene successivamente:
-1. buildata con Vite
-2. convertita tramite Capacitor
-3. compilata in APK da Android Studio
+The app was originally developed as a React web app and then:
+1. built with Vite
+2. converted using Capacitor
+3. compiled into an APK via Android Studio
 
-Questo approccio consente di mantenere **un’unica codebase** per web e mobile.
+This approach allows maintaining **a single codebase** for both web and mobile.
 
-## Script principali
+## Main Scripts
 
-- Avvio in sviluppo:
+- Development:
+    ```bash
     npm run dev
+    ```
 
-- Build di produzione:
+- Production build:
+    ```bash
     npm run build
+    ```
 
-- Copia per Android:
+- Copy for Android:
+    ```bash
     npx cap copy android
+    ```
 
-## Stato del progetto
-Il progetto è completato.
-Non sono previste nuove funzionalità, poiché l’app soddisfa pienamente l’obiettivo per cui è stata creata.
+## Project Status
+The project is **complete**.  
+No new features are planned, as the app fully satisfies the original purpose it was created for.
