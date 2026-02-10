@@ -61,23 +61,6 @@ The app was originally developed as a React web app and then:
 
 This approach allows maintaining **a single codebase** for both web and mobile.
 
-## Main Scripts
-
-- Development:
-    ```bash
-    npm run dev
-    ```
-
-- Production build:
-    ```bash
-    npm run build
-    ```
-
-- Copy for Android:
-    ```bash
-    npx cap copy android
-    ```
-
 ## Project Status
 The project is **complete**.  
 No new features are planned, as the app fully satisfies the original purpose it was created for.
